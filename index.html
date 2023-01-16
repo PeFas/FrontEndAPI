@@ -1,0 +1,44 @@
+<!DOCTYPE <html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="/js/estilos.css" media="screen" />
+
+    </head> 
+    <body>
+        <section>
+            <form>
+
+                Criterio a buscar <input id="searchTerm" type="text" onkeyup="doSearch()" />
+        
+            </form>
+        </section>
+       
+        <table id="datos">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Correo</th>
+                    <th>Series</th>
+                    <th>Materiales</th>
+                    <th>Tipo</th>
+                    <th>Dia</th>
+                </tr>
+               
+            </thead>
+            <tbody id="tableBody_Routines"></tbody>
+            <tr class='noSearch hide'>
+
+                <td colspan="5"></td>
+
+            </tr>
+        </table>
+        <script src="./js/index.js"></script>
+    </body>
+
+</html>
