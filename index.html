@@ -4,40 +4,68 @@
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Document</title>
+        <title>Tabla de Usuarios</title>
         <link rel="stylesheet" type="text/css" href="/js/estilos.css" media="screen" />
-
     </head> 
     <body>
-        <section>
-            <form>
-
-                Criterio a buscar <input id="searchTerm" type="text" onkeyup="doSearch()" />
-        
-            </form>
-        </section>
        
-        <table id="datos">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Correo</th>
-                    <th>Series</th>
-                    <th>Materiales</th>
-                    <th>Tipo</th>
-                    <th>Dia</th>
-                </tr>
+        <div class="tabs">
+            <div class="tab-container">
+              <div id="tab2" class="tab">
+                <a href="#tab2">Consultar</a>
+                <div class="tab-content">
                
-            </thead>
-            <tbody id="tableBody_Routines"></tbody>
-            <tr class='noSearch hide'>
+                    <h1>Usuarios Existentes</h1>
 
-                <td colspan="5"></td>
+                    <section>
+                        <form>
+            
+                            Criterio a buscar <input id="searchTerm" type="text" onkeyup="doSearch()" />
+                    
+                        </form>
+                    </section>
+                   
+                    <table id="datos">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Correo</th>
+                                <th>Series</th>
+                                <th>Materiales</th>
+                                <th>Tipo</th>
+                                <th>Dia</th>
+                            </tr>
+                           
+                        </thead>
+                        <tbody id="tableBody_Routines"></tbody>
+                        <tr class='noSearch hide'>
+            
+                            <td colspan="5"></td>
+            
+                        </tr>
+                    </table>
 
-            </tr>
-        </table>
+
+                </div>
+              </div> 
+              <div id="tab1" class="tab">
+                <a href="#tab1">Informacion</a>
+                <div class="tab-content">
+                  <h2>UCACUE Gym</h2>
+                  <p>Sistema para consulta de usuarios registrados en el Gimnasio que posean rutinas activas de ejercicios.</p>
+                  
+                  <p>
+                    <img src="/logo.jpg" height="150">
+                  </p>
+                  <p>
+                    Integrantes: Pedro Alvarez, Juan Medina, Joseph Murillo
+                  </p>
+                </div> 
+              </div> 
+            </div>
+          </div>
         <script src="./js/index.js"></script>
     </body>
 
