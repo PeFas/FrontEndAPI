@@ -1,7 +1,7 @@
 const listRoutines = async () => {
     const response =  await fetch("https://ejerciciosapi.azure-api.net/rutina");
     const routines = await response.json();
-
+//id del cuerpo de tabla
     let tableBody = ``;
     routines.forEach((routine, index) => {
         tableBody += `<tr>
